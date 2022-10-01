@@ -5,23 +5,18 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import HomeScreen from './Screens/HomeScreen';
 import AboutScrean from './Screens/AboutScrean';
 import TestScreen from './Test/TestScreen';
-import HeaderComponent from './Components/HeaderComponent';
+//import HeaderComponent from './Components/HeaderComponent';
 import FooterComponent from './Components/FooterComponent';
-import NavBarComponent from './Components/NavBarComponent';
-
+//import NavBarComponent from './Components/NavBarComponent';
+import Navigator from "./Components/Navigator/Navigator";
 function App() {
   return (
-    <div className="App">
-      <h1>IEEE Official Web Site</h1>
-
-      <HeaderComponent/>
-      <NavBarComponent/>
+    <div className="App"> 
       <BrowserRouter>
+      <Navigator/>
         <Routes>
           <Route path='/home' element={< HomeScreen/>} />
           <Route path='/about' element={< AboutScrean/>} />
-
-
           {/* test route */}
           <Route path='/test' element={< TestScreen/>} />
         </Routes>
