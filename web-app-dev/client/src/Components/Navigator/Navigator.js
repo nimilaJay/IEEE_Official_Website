@@ -1,7 +1,7 @@
 import React from "react";
 import "./navigator.css";
 import { Link } from "react-router-dom";
-import cart from "./img/carts.png";
+
 
 const Navigator = () => {
   return (
@@ -25,97 +25,54 @@ const Navigator = () => {
               >
                 <ul className="site-menu js-clone-nav mr-auto d-none d-lg-block">
                   <li>
-                    <Link to="/">
+                    <Link to="/home">
                       <span>Home</span>
                     </Link>
                   </li>
                   <li className="has-children">
                     <a href="about.html">
                       <span>
-                        All Services <i class="fa-solid fa-caret-down mx-2"></i>
+                        About Us <i class="fa-solid fa-caret-down mx-2"></i>
                       </span>{" "}
                     </a>
                     <ul className="dropdown arrow-top">
                       <li>
-                        <Link to="/login">
-                          <a>Admin Login</a>
-                        </Link>
+                        <Link to="/about">History</Link>
                       </li>
                       <li className="has-children">
-                        <Link to="/">Services</Link>
-                        <a href="#">
-                          Admins <i class="fa-solid fa-caret-down"></i>
-                        </a>
-                        <ul className="dropdown">
-                          <li>
-                            <Link to="/Product">
-                              <a>Store Products Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/store/store-admin-orders">
-                              <a>Store Orders Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/store/store-admin-payments">
-                              <a>Store Payments Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/VacancyAdmin">
-                              <a>Vacancy Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/GuidanceAdmin">
-                              <a>Guidance Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/ApplyVacancyAdmin">
-                              <a>Apply Vacancy Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/ApplyGuidanceAdmin">
-                              <a>Apply Guidamce Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/CandidateAdmin">
-                              <a>Candidate Admin</a>
-                            </Link>
-                          </li>
-                        </ul>
+                        <Link to="/about">Executive Committee 2022/23</Link>
+                      </li>
+                      <li className="has-children">
+                        <Link to="/about">IEEE</Link>
+                      </li>
+                      <li className="has-children">
+                        <Link to="/about">Benefits</Link>
                       </li>
                     </ul>
                   </li>
                   <li>
                     <Link to="/login">
-                      <span>Login</span>
+                      <span>News</span>
                     </Link>
                   </li>
                   <li>
-                    <a href="about.html">
-                      <span>About</span>
+                    <a href="/">
+                      <span>Events</span>
                     </a>
                   </li>
                   <li>
-                    <a href="blog.html">
-                      <span>Blog</span>
+                    <a href="/">
+                      <span>Downloads</span>
                     </a>
                   </li>
                   <li>
-                    <a href="contact.html">
-                      <span>Contact</span>
+                    <a href="/">
+                      <span>Community</span>
                     </a>
                   </li>
                   <li>
-                    <a href="contact.html">
-                      <span>Cart
-                        <img src={cart} alt="" style={{width:"40px"}}/>
-                      </span>
+                    <a href="/">
+                      <span>Contact Us</span>
                     </a>
                   </li>
                 </ul>
