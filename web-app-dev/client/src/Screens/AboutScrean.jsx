@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './ScreensCss/CommonCss.css';
 
 const AboutScrean = () => {
     return (
         <div>
-            <h1 className="header">About Us Page</h1>
+            <h1 className="page">About Us Page</h1>
         </div>
     )
 }

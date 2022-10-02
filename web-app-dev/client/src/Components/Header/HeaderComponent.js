@@ -1,9 +1,12 @@
 import React from 'react'
+import "./HeaderComponent.css";
 
 const HeaderComponent = () => {
     return (
         <div>
-            <h1>Header</h1>
+            <div className="header-component">
+                <p>Header</p>
+            </div>
         </div>
     )
 }
